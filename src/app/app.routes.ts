@@ -6,6 +6,7 @@ import { Home } from './home/home';
 import { Header } from './header/header';
 import { Blog } from './blog/blog';
 import { Quiz } from './quiz/quiz';
+import { Admin } from './admin/admin';
 export const routes: Routes = [
     { path : '', component: Home },
     { path : 'header', component: Header },
@@ -13,5 +14,6 @@ export const routes: Routes = [
     { path: 'register', component: Register},
     { path: 'dashboard', component: Dashboard },
     { path: 'blog', component: Blog },
-    { path: 'quiz', component: Quiz }
+    { path: 'quiz', component: Quiz },
+    { path: 'admin', component: Admin}
 ];
