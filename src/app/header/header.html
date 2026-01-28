@@ -1,0 +1,22 @@
+<header>
+    <button type="button" (click)="goto_login()" class="profile">
+        Profile
+    </button>
+    <select class="theme">
+        <option value="light">Light Mode</option>
+        <option value="dark">Dark Mode</option>
+        <option value="reading">Reading Mode</option>
+    </select>
+    <select class="language">
+        <option value="english">English</option>
+        <option value="spanish">Burmese</option>
+        <option value="french">Hindi</option>
+    </select>
+</header>
+<div class="categories">
+    <button type="button" class="category" (click)="goto_blogs()">Blogs</button>
+    <!-- <button type="button" class="category" (click)="goto_market()">Marketplace</button> -->
+    <button type="button" class="category" (click)="goto_quiz()">Quizzes</button>
+
+    <input type="search" placeholder="  Search blogs..." class="search_bar">
+</div>

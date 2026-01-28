@@ -1,0 +1,72 @@
+<div class="quiz_container">
+    <section class="quiz_section quiz_menu">
+        <button type="button" (click)="home()">
+            Home
+        </button>
+        <button type="button" (click)="blog()">
+            Blogs
+        </button>
+        <button type="button" onclick="market()">
+            Marketplace
+        </button>
+
+        <hr>
+    </section>
+    <section class="quiz_section quiz_questions">
+        <div class="quiz_header">
+            <h1>Daily Quiz</h1>
+            <!-- <hr><hr> -->
+        </div>
+        <div class="quiz_problem">
+            <form method="post" action="#">
+                <h3>1. What is the capital of France?</h3>
+                <input type="radio" id="paris" name="q1" value="Paris">
+                <label for="paris">Paris</label><br>
+                <input type="radio" id="london" name="q1" value="London">
+                <label for="london">London</label><br>
+                <input type="radio" id="berlin" name="q1" value="Berlin">
+                <label for="berlin">Berlin</label><br>
+                <input type="radio" id="madrid" name="q1" value="Madrid">
+                <label for="madrid">Madrid</label><br>
+                <hr>
+
+                <h3>2. Which planet is known as the Red Planet?</h3>
+                <input type="radio" id="mars" name="q2" value="Mars">
+                <label for="mars">Mars</label><br>
+                <input type="radio" id="venus" name="q2" value="Venus">
+                <label for="venus">Venus</label><br>
+                <input type="radio" id="jupiter" name="q2" value="Jupiter">
+                <label for="jupiter">Jupiter</label><br>
+                <input type="radio" id="saturn" name="q2" value="Saturn">
+                <label for="saturn">Saturn</label><br>
+                <hr>
+
+                <h3>3. Who wrote 'Romeo and Juliet'?</h3>
+                <input type="radio" id="shakespeare" name="q3" value="Shakespeare">
+                <label for="shakespeare">William Shakespeare</label><br>
+                <input type="radio" id="dickens" name="q3" value="Dickens">
+                <label for="dickens">Charles Dickens</label><br>
+                <input type="radio" id="austen" name="q3" value="Austen">
+                <label for="austen">Jane Austen</label><br>
+                <input type="radio" id="twain" name="q3" value="Twain">
+                <label for="twain">Mark Twain</label><br>
+                <hr>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    <section class="quiz_section quiz_history">
+        <div class="history_records">
+            <button type="button" onclick="leaderboard()">
+                Leaderboard
+            </button>
+            <button type="button" onclick="history()">
+                History
+            </button>
+            <button type="button" onclick="rewards()">
+                Rewards
+            </button>
+        </div>
+    </section>
+</div>

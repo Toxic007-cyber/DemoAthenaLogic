@@ -1,0 +1,18 @@
+
+<div class="register_form">
+        <h2>Register Your Account</h2>
+        <!-- <form action="home.html" method="post"> -->
+            <input type="text" id="username" [(ngModel)]="name" placeholder="Enter Username" required>
+            <input type="email" id="email" [(ngModel)]="email" placeholder="Enter Email" required> 
+            <input type="password" id="password" [(ngModel)]="password" required placeholder="Enter Password">
+            <button type="submit" (click)="register()">Register</button>
+        <!-- </form> -->
+        <br><br>
+        Already had an account? &nbsp;<a href="login.html">Login</a>
+        <br><br>
+        ---------- OR ----------
+        <br>
+        <button type="button" onclick="google()">
+            Login With Google
+        </button>
+    </div>

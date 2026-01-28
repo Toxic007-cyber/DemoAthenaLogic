@@ -1,0 +1,16 @@
+<div class="register_form">
+  <h2>Login to Your Account</h2>
+  <input type="email" id="username" [(ngModel)]="email" placeholder="Enter Email" required>
+  <input type="password" id="password" [(ngModel)]="password" required placeholder="Enter Password">
+  <button type="submit" (click)="login()">Login</button>
+  <br><br>
+  <a href="#">Forgot Password?</a>
+  <br><br>
+  ---------- OR ----------
+  <br><br>
+  Dont have an account? &nbsp;<a (click)="register()">Register</a>
+  <br>
+  <button type="button" (click)="google()">
+    Login With Google
+  </button>
+</div>
