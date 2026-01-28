@@ -25,4 +25,10 @@ export class Header {
   goto_quiz(){
     this.router.navigate(['/quiz']);
   }
+
+  goto_marketplace(){
+    this.router.navigate(['/marketplace']);
+  }
+
+
 }
