@@ -1,0 +1,37 @@
+/* =========================
+   LEADERBOARD MODAL
+   ========================= */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999999;
+}
+
+.modal-content {
+  background: #f6f1e5;
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 22px;
+  cursor: pointer;
+}
