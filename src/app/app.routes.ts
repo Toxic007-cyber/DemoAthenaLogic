@@ -6,11 +6,11 @@ import { Home } from './home/home';
 import { Header } from './header/header';
 import { Blog } from './blog/blog';
 import { Quiz } from './quiz/quiz';
-<<<<<<< HEAD
+
 import { Leaderboard } from './quiz/leaderboard/leaderboard';
-import { Admin } from './admin/admin';
-=======
->>>>>>> 075764fa5c3cb96e2c8b02242302ec2d09514353
+// import { Admin } from './admin/admin';
+
+// >>>>>>> 075764fa5c3cb96e2c8b02242302ec2d09514353
 import { Marketplace } from './marketplace/marketplace';
 
 // import { adminGuard } from './admin/guard/admin-guard';
@@ -30,13 +30,8 @@ export const routes: Routes = [
     { path: 'dashboard', component: Dashboard },
     { path: 'blog', component: Blog },
     { path: 'quiz', component: Quiz },
-<<<<<<< HEAD
     { path: 'leaderboard', component: Leaderboard},
-    { path: 'admin', component: Admin},
-    { path: 'marketplace', component: Marketplace}
-=======
-    { path: 'admin', component: Admin },
+    { path: 'marketplace', component: Marketplace},
     { path: 'marketplace', component: Marketplace }
 
->>>>>>> 075764fa5c3cb96e2c8b02242302ec2d09514353
 ];
