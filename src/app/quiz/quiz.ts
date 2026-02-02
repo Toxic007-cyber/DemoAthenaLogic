@@ -20,4 +20,16 @@ export class Quiz {
   blog() {
     this.router.navigate(['/blog']);
   }
+
+  showLeaderboard = false;
+
+  openLeaderboard(){
+    this.showLeaderboard = true;
+  }  
+
+  closeLeaderboard(){
+    this.showLeaderboard = false;
+
+  }
+  
 }

@@ -10,6 +10,7 @@
             Marketplace
         </button>
 
+
         <hr>
     </section>
     <section class="quiz_section quiz_questions">
@@ -30,6 +31,7 @@
                 <label for="madrid">Madrid</label><br>
                 <hr>
 
+
                 <h3>2. Which planet is known as the Red Planet?</h3>
                 <input type="radio" id="mars" name="q2" value="Mars">
                 <label for="mars">Mars</label><br>
@@ -40,6 +42,7 @@
                 <input type="radio" id="saturn" name="q2" value="Saturn">
                 <label for="saturn">Saturn</label><br>
                 <hr>
+
 
                 <h3>3. Who wrote 'Romeo and Juliet'?</h3>
                 <input type="radio" id="shakespeare" name="q3" value="Shakespeare">
@@ -52,21 +55,55 @@
                 <label for="twain">Mark Twain</label><br>
                 <hr>
 
+
                 <input type="submit" value="Submit">
             </form>
         </div>
     </section>
-    <section class="quiz_section quiz_history">
+        <section class="quiz_section quiz_history">
+
+
+
+
+
+
         <div class="history_records">
-            <button type="button" routerLink="/leaderboard">
-                Leaderboard
-            </button>
-            <button type="button" routerLink="/history">
-                History
-            </button>
-            <button type="button" routerLink="/rewards">
-                Rewards
-            </button>
-        </div>
+           
+                <button type="button" (click)="openLeaderboard()">
+                    Leaderboard
+                </button>
+                <button type="button" routerLink="/history"> 
+                    History 
+                </button> 
+                <button type="button" routerLink="/rewards"> 
+                    Rewards 
+                </button>
+
+                
+                
+                
+           
+        </div>        
+       
     </section>
+
+    
+    
+
 </div>
+
+<div class="modal" *ngIf="showLeaderboard" (click)="closeLeaderboard()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <span class="close-btn" (click)="closeLeaderboard()">×</span>
+
+    <h2>🏆 Leaderboard</h2>
+    <hr>
+
+    <ol>
+      <li>Shanu — 95</li>
+      <li>Alex — 90</li>
+      <li>Sam — 85</li>
+    </ol>
+  </div>
+</div>
+ 
