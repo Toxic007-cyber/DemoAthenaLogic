@@ -6,6 +6,7 @@ import { Home } from './home/home';
 import { Header } from './header/header';
 import { Blog } from './blog/blog';
 import { Quiz } from './quiz/quiz';
+import { Leaderboard } from './quiz/leaderboard/leaderboard';
 import { Admin } from './admin/admin';
 import { Marketplace } from './marketplace/marketplace';
 export const routes: Routes = [
@@ -16,6 +17,7 @@ export const routes: Routes = [
     { path: 'dashboard', component: Dashboard },
     { path: 'blog', component: Blog },
     { path: 'quiz', component: Quiz },
+    { path: 'leaderboard', component: Leaderboard},
     { path: 'admin', component: Admin},
     { path: 'marketplace', component: Marketplace}
 ];
