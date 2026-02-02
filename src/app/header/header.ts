@@ -29,6 +29,5 @@ export class Header {
   goto_marketplace(){
     this.router.navigate(['/marketplace']);
   }
-
-
+  
 }
