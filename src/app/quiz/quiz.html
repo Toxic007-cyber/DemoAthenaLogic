@@ -60,25 +60,80 @@
             </form>
         </div>
     </section>
-        <section class="quiz_section quiz_history">
-
-
-
-
-
-
+    <section class="quiz_section quiz_history">
         <div class="history_records">
-            <button type="button" (click)="openLeaderboard()">
-                Leaderboard
-            </button>
-            <button type="button" routerLink="/history">
-                History
-            </button>
-            <button type="button" routerLink="/rewards">
-                Rewards
-            </button>
-        </div>
+                <button type="button" onclick="leaderboard()">
+                    Leaderboard
+                </button>
+                <div class="display_records leaderboard hidden">
+                    <table>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Name</th>
+                            <th>Score</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Alice</td>
+                            <td>95</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Bob</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Charlie</td>
+                            <td>85</td>
+                        </tr>
+                    </table>
+                </div>
+                <button type="button" onclick="history()">
+                    History
+                </button>
+                <div class="display_records history hidden">
+                    <table>
+                        <tr>
+                            <th>Date</th>
+                            <th>Score</th>
+                        </tr>
+                        <tr>
+                            <td>2024-01-01</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <td>2024-01-02</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>2024-01-03</td>
+                            <td>95</td>
+                        </tr>
+                    </table>
+                </div>
+                <button type="button" onclick="rewards()">
+                    Rewards 
+                </button>
+                <div class="display_records rewards hidden">
+                    <table>
+                        <tr>
+                            <th>Reward</th>
+                            <th>Date Earned</th>
+                        </tr>
+                        <tr>
+                            <td>10% Discount Coupon</td>
+                            <td>2024-01-02</td>
+                        </tr>
+                        <tr>
+                            <td>Free E-book</td>
+                            <td>2024-01-03</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
     </section>
+
 
     
     
@@ -125,3 +180,4 @@
     </table>
   </div>
 </div>     
+
