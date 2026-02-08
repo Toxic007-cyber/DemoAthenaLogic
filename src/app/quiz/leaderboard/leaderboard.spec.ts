@@ -1,20 +1,24 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { Leaderboard } from './leaderboard';
+// Path should be './leaderboard' and the class name is 'Leaderboard'
+import { Leaderboard } from './leaderboard'; 
 
 describe('Leaderboard', () => {
   let component: Leaderboard;
   let fixture: ComponentFixture<Leaderboard>;
+  
+  
 
   beforeEach(async () => {
+
     await TestBed.configureTestingModule({
-      imports: [Leaderboard]
+      // Keep in imports if it is a standalone component
+      imports: [Leaderboard] 
     })
     .compileComponents();
 
     fixture = TestBed.createComponent(Leaderboard);
     component = fixture.componentInstance;
-    await fixture.whenStable();
+    fixture.detectChanges();
   });
 
   it('should create', () => {

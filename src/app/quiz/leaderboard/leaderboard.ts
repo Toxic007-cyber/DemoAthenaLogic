@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Import this to use *ngFor in your HTML
+import { CommonModule } from '@angular/common';
+//import { Leaderboard } from './quiz/leaderboard/leaderboard'; 
+
 
 @Component({
   selector: 'app-leaderboard',
