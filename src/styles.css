@@ -243,7 +243,7 @@ header{
     border: none;
     border-top: solid 2px black;
     border-bottom: solid 2px black;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .user_info, .user_history{
@@ -252,7 +252,37 @@ header{
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #e2d1b3;
+    /* border-right: solid 2px black; */
+    /* background-color: #e2d1b3; */
+}
+
+.user_info .uesr_information{
+    width: 95%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.uesr_information img{
+    width: auto;
+    height: 200px;
+    margin: 20px;
+    display: block;
+}
+
+.user_logout_btn{
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    border-radius: none;
+    background: none;
+    cursor: pointer;
+}
+
+.user_logout_btn:hover{
+    background-color: gray;
 }
 
 
