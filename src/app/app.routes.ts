@@ -23,6 +23,7 @@ export const routes: Routes = [
     { path: 'dashboard', component: Dashboard },
     { path: 'blog', component: Blog },
     { path: 'quiz', component: Quiz },
+    { path: '', component: Home },
     //{ path: 'admin', component: Admin },
     { path: 'marketplace', component: Marketplace },
 ];

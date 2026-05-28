@@ -1,33 +1,39 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule],
   standalone: true,
+  imports: [CommonModule],
   templateUrl: './header.html',
-  styleUrl: './header.css',
+  styleUrls: ['./header.css']
 })
 export class Header {
+  
 
-  constructor (
-    private router: Router
-  ){}
-  goto_login(){
-    this.router.navigate(['./login']);
+  constructor(private router: Router) {}
+    
+
+  gotoLogin() {
+    this.router.navigate(['/login']);
   }
 
-  goto_blogs(){
-    this.router.navigate(['blog']);
+  gotoBlogs() {
+  console.log('blog clicked');
+  this.router.navigate(['/blog']);
   }
 
-  goto_quiz(){
+  gotoMarketplace() {
+    this.router.navigate(['/marketplace']);
+  }
+
+  gotoQuiz() {
     this.router.navigate(['/quiz']);
   }
 
-  goto_marketplace(){
-    this.router.navigate(['/marketplace']);
+  gotohome() {
+    this.router.navigate(['/']);
   }
+}  
   
-}
