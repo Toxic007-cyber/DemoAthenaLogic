@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { Blog } from '../blog/blog';
+
 // import { quiz } from '../quiz/quiz';
 // import { Login } from "../login/login";
 

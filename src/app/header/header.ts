@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
+  imports: [CommonModule, RouterModule],
   standalone: true,
-  imports: [CommonModule],
   templateUrl: './header.html',
   styleUrls: ['./header.css']
 })
@@ -32,8 +32,9 @@ export class Header {
     this.router.navigate(['/quiz']);
   }
 
-  gotohome() {
+
+  gotoHome(){
     this.router.navigate(['/']);
   }
-}  
   
+}

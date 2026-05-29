@@ -1,48 +1,26 @@
 <header>
-
-  <!-- TOP BAR -->
-  <div class="top-bar">
-    <div class="right-controls">
-
-      <!-- Language -->
-      <select class="language">
-        <option value="en">English</option>
-        <option value="my">Burmese</option>
-        <option value="hi">Hindi</option>
-      </select>
-
-      <!-- Theme -->
-      <select class="theme">
+    
+        
+  
+    <button type="button" (click)="gotoLogin()" class="profile">
+        Profile
+    </button>
+    <select class="theme">
         <option value="light">Light Mode</option>
         <option value="dark">Dark Mode</option>
         <option value="reading">Reading Mode</option>
-      </select>
-
-      <!-- Profile Button -->
-      <button type="button" class="profile" (click)="gotoLogin()">
-        Profile
-      </button>
-
+    </select>
+    <select class="language">
+        <option value="english">English</option>
+        <option value="spanish">Burmese</option>
+        <option value="french">Hindi</option>
+    </select>
+    <div class="categories">
+        <button type="button" class="category" (click)="gotoHome()">Home</button>
+        <button type="button" class="category" (click)="gotoBlogs()">Blogs</button>
+        <button type="button" class="category" (click)="gotoMarketplace()">Marketplace</button>
+        <button type="button" class="category" (click)="gotoQuiz()">Quizzes</button>
+    
+        <input type="search" placeholder="  Search blogs..." class="search_bar">
     </div>
-  </div>
-
-  
 </header>
-
-<!-- CATEGORY SECTION -->
-<div class="categories">
-
-  <button type="button" class="category" (click)="gotoBlogs()">Blogs</button>
-  <button type="button" class="category" (click)="gotoMarketplace()">Marketplace</button>
-  <button type="button" class="category" (click)="gotoQuiz()">Quizzes</button>
-  <button type="button" class="category" (click)="gotohome()">Home</button>
-
-
-  <!-- Search -->
-  <input 
-    type="search" 
-    placeholder="Search blogs..." 
-    class="search_bar"
-  />
-
-</div>
