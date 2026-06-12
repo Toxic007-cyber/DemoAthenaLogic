@@ -1,26 +1,45 @@
-<header>
-    
-        
-  
-    <button type="button" (click)="gotoLogin()" class="profile">
-        Profile
-    </button>
-    <select class="theme">
-        <option value="light">Light Mode</option>
-        <option value="dark">Dark Mode</option>
-        <option value="reading">Reading Mode</option>
-    </select>
-    <select class="language">
-        <option value="english">English</option>
-        <option value="spanish">Burmese</option>
-        <option value="french">Hindi</option>
-    </select>
-    <div class="categories">
-        <button type="button" class="category" (click)="gotoHome()">Home</button>
-        <button type="button" class="category" (click)="gotoBlogs()">Blogs</button>
-        <button type="button" class="category" (click)="gotoMarketplace()">Marketplace</button>
-        <button type="button" class="category" (click)="gotoQuiz()">Quizzes</button>
-    
-        <input type="search" placeholder="  Search blogs..." class="search_bar">
+<header class="header">
+
+    <!-- LEFT SIDE -->
+     <div class="nav-left">
+        <button class="category" (click)="gotoHome()">Home</button>
+        <button class="category" (click)="gotoBlogs()">Blogs</button>
+        <button class="category" (click)="gotoMarketplace()">Marketplace</button>
+        <button class="category" (click)="gotoQuiz()">Quizzes</button>
+     </div> 
+
+    <!-- RIGHT SIDE -->
+    <div class="nav-right">
+
+        <div class="search-bar">
+            <form>
+                <input type="search" placeholder="Search...">
+                <button type="submit">🔍</button>
+            </form>
+        </div>
+
+        <select class="theme">
+            <option value="light">Light Mode</option>
+            <option value="dark">Dark Mode</option>
+            <option value="reading">Reading Mode</option>
+        </select>
+        <select class="language">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+        </select>          
+
+        <button type="button" class="profile" (click)="gotoLogin()">Profile</button>
+
     </div>
+
 </header>
+
+
+
+
+
+
+
+
+
